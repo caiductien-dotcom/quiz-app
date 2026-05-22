@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <div id="start-screen" class="screen">
+            <h1>General Knowledge Quiz</h1>
+            <p>Welcome! This quiz will test your frontend knowledge. You have 60 seconds per question.</p>
+            <button id="start-btn" class="btn primary-btn">Start Quiz</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hidden">
+            <div class="quiz-header">
+                <span id="question-counter">Question 1 of 5</span>
+                <span id="timer-display">Time Left: 60s</span>
+            </div>
+            
+            <div class="card">
+                <h2 id="question-text">Question content goes here?</h2>
+                <div id="answer-buttons" class="btn-grid">
+                    </div>
+            </div>
+
+            <button id="next-btn" class="btn hidden">Next Question</button>
+        </div>
+
+        <div id="result-screen" class="screen hidden">
+            <h1>Quiz Completed!</h1>
+            <p class="score-text">Your Final Score: <span id="final-score">0</span></p>
+            <button id="restart-btn" class="btn primary-btn">Try Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

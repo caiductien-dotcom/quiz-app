@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.quiz-container {
+    background: #fff;
+    width: 100%;
+    max-width: 550px;
+    padding: 30px;
+    border: 2px solid #000;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.screen.hidden { display: none; }
+
+h1 { font-size: 1.8rem; margin-bottom: 15px; }
+p { color: #555; margin-bottom: 25px; line-height: 1.5; }
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card {
+    border: 2px solid #000;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 12px 15px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.btn:hover:not(:disabled) { background-color: #f0f0f0; }
+
+.primary-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+#next-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+/* Các trạng thái màu sắc đáp án đúng/sai */
+.btn.correct {
+    background-color: #d4edda !important;
+    border-color: #28a745 !important;
+    color: #155724 !important;
+    font-weight: bold;
+}
+
+.btn.wrong {
+    background-color: #f8d7da !important;
+    border-color: #dc3545 !important;
+    color: #721c24 !important;
+}
+
+.score-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
